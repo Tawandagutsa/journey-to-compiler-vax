@@ -41,7 +41,6 @@ public class Vax {
     private static void run(String source) {
         if (hadError) System.exit(65);
         System.out.println(source);
-
     }
 
     static void error(int line, String message) {
