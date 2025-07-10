@@ -10,3 +10,7 @@ Main Steps of an Interpreter
 4. Interpretation / Execution – Executes the code directly from the AST or line by line.
 
 5. Runtime Services – Manages things like memory, input/output, and error handling during execution.
+
+
+🔍 Scanning (Lexical Analysis)
+Scanning, also called lexical analysis, is the first step in interpreting code. It reads the raw source code and breaks it down into tokens—the basic building blocks like keywords (if, while), identifiers (x, total), operators (+, =), and punctuation (;, {). These tokens are then passed to the parser for further analysis.
