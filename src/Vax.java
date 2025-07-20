@@ -4,6 +4,7 @@ import java.io.InputStreamReader;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.List;
 
 public class Vax {
 
@@ -40,7 +41,13 @@ public class Vax {
 
     private static void run(String source) {
         if (hadError) System.exit(65);
-        System.out.println(source);
+
+        Scanner scanner = new Scanner(source);
+        List<Token> tokens = scanner.scanTokens();
+
+        for (Token token : tokens){
+            System.out.println(token);
+        }
     }
 
     static void error(int line, String message) {
